@@ -50,20 +50,3 @@
   </div>
 </div>
 
-<% if task.errors.any? %>
-
-        <div id="error_explanation" class="alert alert-warning">
-          <ul>
-            
-<% task.errors.full_messages.each do |msg| %>
-
-              <li>
-<%= msg %>
-</li>
-            
-<% end %>
-
-          </ul>
-        </div>
-      
-<% end %>
