@@ -9,7 +9,7 @@ Rails.application.routes.draw do
  
   root to: 'tasks#index'
   
-  resources :users, only: [:index, :show, :new, :create]   
+  resources :users, only: [:new, :create]   
   resources :tasks
     
 end
